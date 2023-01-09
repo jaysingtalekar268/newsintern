@@ -1,0 +1,41 @@
+.div_box {
+        border-style: solid;
+        margin: 1%;
+}
+
+h1 {
+        font-family: HElvetica Neue;
+        font-weight: bold;
+
+
+}
+
+p {
+        font-family: Georgia;
+
+}
+
+
+
+.company_name {
+        padding: 1%;
+        font-family: helvetica;
+        font-weight: bold;
+        font-size: 300%;
+        border-style: solid;
+        background: linear-gradient(to bottom, );
+}
+
+img:hover {
+        transform: scale(1.05);
+
+}
+
+
+
+.news_slide_head {
+
+        font-family: HElvetica Neue;
+        font-weight: bold;
+}
+
