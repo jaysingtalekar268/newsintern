@@ -55,33 +55,14 @@
 
     <!-- nav bar end -->
     <!-- main news div start -->
-    <div class="container company_name text-center d-flex-center align-middle">
+    <div class=" company_name text-center d-flex-center align-middle">
         NewsExpress
     </div>
 
-    <button role="button" onclick="get_home_news()">Homw NEws</button>
-    <div class="container">
+    <!-- <button role="button" onclick="get_home_news()">Homw NEws</button> -->
+    <div class="">
         <div class="row">
-            <div class=" container mb-2">
-
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active news_slide  ">
-                            <h1 class=" news_slide_head w-100 mb-2  text-center"></h1>
-                            <img class="d-block rounded w-100 img-fluid news_slide_img  mt-3 " src="" alt="">
-                        </div>
-                        <div class="carousel-item  news_slide  ">
-                            <h2 class=" news_slide_head w-100 mb-2 text-center"></h2>
-                            <img class="d-block rounded w-100 img-fluid news_slide_img mt-3" src="" alt="">
-                        </div>
-                        <div class="carousel-item  news_slide  ">
-                            <h2 class=" news_slide_head w-100 mb-2 text-center"></h2>
-                            <img class="d-block rounded w-100 img-fluid news_slide_img mt-3" src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col m-4 ">
+            <div class="col m-4  " >
                 <div>
                     <h1 class="homepage_main_news_head"></h1>
                     <img src="" class="homepage_main_news_img img-fluid mt-1 " alt="">
@@ -89,41 +70,70 @@
                 </div>
             </div>
 
-            <div class="col  m-4">
-                <div class="div_box">
+
+
+            <div class="col  m-4" >
+                <div class="div_box " >
 
                     <ul class="list-unstyled ">
-                        <li class="media ">
-                            <img src="" class="mr-3  next_news_img img-fluid " height="20%" width="20%" alt="">
-                            <div class="media-body  ">
-                                <h5 class="mt-0 mb-1 next_news_head"></h5>
-                                <div class="next_news_body"></div>
-                                <button type="button" class="btn btn-outline-success" onclick="load_news(0)"><a
-                                        href="./index.html">Read More</a></button>
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <img src="" class="mr-3 next_news_img img-fluid  " height="20%" width="20%" alt="">
-                            <div class="media-body ">
-                                <h5 class="mt-0 mb-1 next_news_head "></h5>
-                                <div class="next_news_body"></div>
-                                <button type="button" class="btn btn-outline-success" onclick="load_news(1)"><a
-                                        href="./index.html">Read More</a></button>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <img src="" class="mr-3 next_news_img img-fluid  " height="20%" width="20%" alt="">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1 next_news_head"></h5>
-                                <div class="next_news_body"></div>
-                                <button type="button" class="btn btn-outline-success " onclick="load_news(2)"><a
-                                        href="./index.html">Read More</a></button>
+                        <li class="media next_news_li">
+                            <a href="./index.html">
+                                <div class="media-body d-flex  ">
+                                    <img src="" class=" next_news_img img-fluid " height="20%" width="30%" alt="">
+                                    <h5 class=" next_news_head"></h5>
+                                    <!-- <div class="next_news_body"></div> -->
+                                </div>
+                            </a>
 
-                            </div>
+                        </li>
+                        <li class="media next_news_li">
+                            <a href="./index.html">
+                                <div class="media-body d-flex  ">
+                                    <img src="" class=" next_news_img img-fluid " height="20%" width="30%" alt="">
+                                    <h5 class=" next_news_head"></h5>
+                                    <!-- <div class="next_news_body"></div> -->
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="media next_news_li">
+                            <a href="./index.html">
+                                <div class="media-body d-flex  ">
+                                    <img src="" class=" next_news_img img-fluid " height="20%" width="30%" alt="">
+                                    <h5 class=" next_news_head"></h5>
+                                    <!-- <div class="next_news_body"></div> -->
+                                </div>
+                            </a>
+
                         </li>
                     </ul>
 
 
+                </div>
+
+                <div class="col text-center ">
+                    <h6>Popular Categories</h6>
+                    <div class="row ">
+                        <div class="col ">
+                            <span class="d-block">
+                                Sports News
+                            </span>
+                            <span class="d-block ">
+                                Business News
+                            </span>
+                            <span class="d-block">
+                                Education News
+                            </span>
+                        </div>
+                        <div class="col">
+                            <span class="d-block ">
+                                Politics News
+                            </span>
+                            <span class="d-block">
+                                Tech News
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -132,39 +142,77 @@
 
 
     <!-- main news div end -->
-    <!-- middle part here  -->
 
-    <div class="col text-center ">
-        <h6>Popular Categories</h6>
-        <div class="row ">
-            <div class="col ">
-                <span class="d-block">
-                    Sports News
-                </span>
-                <span class="d-block ">
-                    Business News
-                </span>
-                <span class="d-block">
-                    Education News
-                </span>
-            </div>
-            <div class="col">
-                <span class="d-block ">
-                    Politics News
-                </span>
-                <span class="d-block">
-                    Tech News
-                </span>
+    <div class=" container mb-2">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active news_slide  ">
+                    <h1 class=" news_slide_head w-100 mb-2  text-center"></h1>
+                    <img class="d-block rounded w-100 img-fluid news_slide_img  mt-3 " src="" alt="">
+                </div>
+                <div class="carousel-item  news_slide  ">
+                    <h2 class=" news_slide_head w-100 mb-2 text-center"></h2>
+                    <img class="d-block rounded w-100 img-fluid news_slide_img mt-3" src="" alt="">
+                </div>
+                <div class="carousel-item  news_slide  ">
+                    <h2 class=" news_slide_head w-100 mb-2 text-center"></h2>
+                    <img class="d-block rounded w-100 img-fluid news_slide_img mt-3" src="" alt="">
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- middle part here  -->
+
+
+    <span class="category_card_title">Sports</span>
+    <section class="category_card_sec">
+
+        <div class="card category_card_sub_str" style="width: 18rem;">
+            <img class="card-img-top category_card_img img-fluid" src="" alt="">
+            <div class="card-body ">
+                <h5 class="card-tex category_card_head"></h5>
+            </div>
+        </div>
+          <div class="card category_card_sub_str" style="width: 18rem;">
+            <img class="card-img-top category_card_img img-fluid" src="" alt="">
+            <div class="card-body ">
+                <h5 class="card-tex category_card_head"></h5>
+            </div>
+        </div>
+          <div class="card category_card_sub_str" style="width: 18rem;">
+            <img class="card-img-top category_card_img img-fluid" src="" alt="">
+            <div class="card-body ">
+                <h5 class="card-tex category_card_head"></h5>
+            </div>
+        </div>
+          <div class="card category_card_sub_str" style="width: 18rem;">
+            <img class="card-img-top category_card_img img-fluid" src="" alt="">
+            <div class="card-body ">
+                <h5 class="card-tex category_card_head"></h5>
+            </div>
+        </div>
+          <div class="card category_card_sub_str" style="width: 18rem;">
+            <img class="card-img-top category_card_img img-fluid" src="" alt="">
+            <div class="card-body ">
+                <h5 class="card-tex category_card_head"></h5>
+            </div>
+        </div>
+        
+    </section>
+
+
     <!-- middle part end  -->
+
     <!-- footer part start here -->
+
+
+
     <div class=" footer_body">
         <div class="row ">
             <div class="col text-center  ">
-                <div class="company_name m-2">NewsExpress </div>
+                <div class=" company_name m-2">NewsExpress </div>
 
                 <div class="row  ">
                     <div class="col pt-5 ">
