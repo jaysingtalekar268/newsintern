@@ -57,6 +57,8 @@ else{
 // console.log(" else i= "+i+" "+news[i].img)
 }
 document.getElementById("nc3").innerHTML= news[i].body.slice(0,500).concat('...');
+
+
 load_news_slide();
 get_next_news();
 i++;
@@ -142,27 +144,30 @@ i++;
 function continue_read()
 {
     const change=   document.getElementById("nc3");
-    
+   
+   
     if(change.style.display=='' || change.style.display=='none' )
     {
         change.innerHTML=news[(i-1)].body;
        change.style.display='block';
        document.getElementsByClassName('continue_news')[0].innerHTML='Close';
     }
-    else
-    {   
-        document.getElementById("nc3").innerHTML= news[(i-1)].body.slice(0,500).concat('...');
+    // else
+    // {   
+    //     document.getElementById("nc3").innerHTML= news[(i-1)].body.slice(0,500).concat('...');
        
-        change.style.display='';
-        document.getElementsByClassName('continue_news')[0].innerHTML='Continue';
-    }
+    //     change.style.display='';
+    //     document.getElementsByClassName('continue_news')[0].innerHTML='Continue';
+    // }
    
-    
+    document.getElementsByClassName('continue_news')[0].remove();
+
 }
 
 
 const get_started = e_t =>
-{{
+{
+    {
 
     let old_scroll=document.getElementById('navbarSupportedContent').offsetTop+40;
     console.log(" top works "+old_scroll);
@@ -179,8 +184,21 @@ const get_started = e_t =>
        }
     }
        }
+
+       
+//     {
+
+//     const continue_read_para = document.querySelector("#nc3");
+//     const continue_news_btn = document.querySelector(".continue_news");
+     
+//     continue_news_btn.addEventListener("click",()=>
+//     {
+//         document.write(continue_read_para);
+
+//     })
+
+// }
 }
 
 
 document.addEventListener('DOMContentLoaded',get_started);
-

@@ -46,6 +46,8 @@ img:hover {
 
         font-family: HElvetica Neue;
         font-weight: bold;
+       
+       
 }
 
 .continue_news {
@@ -86,5 +88,12 @@ img:hover {
 
         position: sticky;
         top: 0;
-        
+        border-style: solid;
+        border-color: rgb(241, 231, 238);
+}
+
+.homepage_main_news_body
+{
+        font-size: 16px;
+        line-height: 30px;
 }
