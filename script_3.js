@@ -161,13 +161,15 @@ function load_category_card()
     for(let i=0;i<avl_cate.length;i++)
     {
         const card_sec = document.getElementsByClassName("category_card_sec"+i)[0];
-        console.log("I "+i);
+        // console.log("I "+i);
         let count=0;
 
         for(let j=0;j<news.length;j++)
-        {   console.log("j "+j);
+        {   
+            // console.log("j "+j);
             if(avl_cate[i]==news[j].category)
-            {    console.log("In J "+j);
+            {    
+                // console.log("In J "+j);
                 // document.write("worikng");
                 const card_img =document.getElementsByClassName("category_card_img"+i);
                 document.getElementsByClassName("category_card_head"+i)[count].insertAdjacentText("afterbegin",news[j].heading);
