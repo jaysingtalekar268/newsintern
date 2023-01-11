@@ -1,7 +1,7 @@
 const n1 = {
     heading: "PayPal enables transfer of digital currencies to external wallets",
     img: "./news_1.png",
-    category: "sport",
+    category: "tech",
     body: " The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform. After rolling out the ability to buy and sell crypto on its platform in October 2020, PayPal is finally allowing users the ability to natively transfer, send and receive digital assets between PayPal and other wallets and exchanges. As of Tuesday, the feature is available to select U.S. users, with the feature expanding to all eligible U.S. users in the coming weeks. The first batch of supported coins consists of BitcoinBTC $16,704, Ether  ETH $1,217, Bitcoin Cash BCH $100, and Litecoin LTC $74.58. In addition, customers who transfer their crypto onto PayPal can spend it via Checkout at millions of merchant terminals. The company has been granted a full Bitlicense by the New York Department of Financial Services for the conductUsers would simply need to log in to their accounts and enter the crypto section of the application to start transferring coins. Users are generally required to complete a one-time ID verification before the procedureCrypto transfers to recipients outside of PayPal would incur a network fee based on their respective blockchains, but transfers between PayPal users will not incur such fees. To protect users' privacy, the firm generates a new recipient address for each transaction into one's PayPal account. PayPal will also not charge fees for incoming transfersThe company is also working to integrate other forms of cryptocurrency services, such as central bank digital currencies, to boost its digital footprint. It is also exploring the possibility of launching its own stablecoin, dubbed \"PayPal Coin.\" The discovery came after a developer found evidence of such a stablecoin within the source code of the company's iPhone app."
 }
 
@@ -26,7 +26,7 @@ const n4 = {
 const n5 = {
     heading: "Mango Markets Exploiter Eisenberg Arrested in Puerto Rico",
     img: "./news_5.png",
-    category: "sport",
+    category: "education",
     body: " Avraham Eisenberg, the crypto investor whose “highly profitable trading strategy”drained DeFi trading platform Mango Markets of crypto worth $110 million, wasarrested Monday in Puerto Rico, court documents said.The self-described game theorist admitted his role in draining Mango Markets’treasury shortly after the incident in mid-October, and may now be the first U.S.resident to face charges for his role in manipulating a decentralized-finance tradingplatform.Eisenberg faces charges of commodities fraud and commodities manipulation,according to a filing unsealed Tuesday. The charges could see punishments rangingfrom fines to prison time.A deposition signed by FBI Special Agent Brandon Racz alleges Eisenberg “willfullyand knowingly” manipulated the sale of a commodity – namely futures contracts onMango Markets.“Eisenberg engaged in a scheme involving the intentional and artificial manipulationof the price of perpetual futures contracts on a cryptocurrency exchange calledMango Markets, and other manipulative and deceptive devices and contrivances.\""
 }
 const news = [n1, n2, n3, n4, n5];
@@ -155,38 +155,42 @@ function continue_read() {
 
 }
 
-function load_category_card() {
-    const card_sec = document.getElementsByClassName("category_card_sec");
-    for (let i = 0; i < card_sec.length && i < avl_cate.length; i++) {
-        const card_img = document.getElementsByClassName("category_card_img")
+function load_category_card()
+{
 
-        console.log(" i= " + i);
+    for(let i=0;i<avl_cate.length;i++)
+    {
+        const card_sec = document.getElementsByClassName("category_card_sec"+i)[0];
+        console.log("I "+i);
         let count=0;
-        for (let k = 0; k < news.length; k++) {
-            console.log(" k= " + k);
 
-            if (avl_cate[i] == news[k].category) {
-                console.log(" inside k= " + k);
-
-                if (news[i].img != null) {
-
-                    card_img[count].setAttribute("src", news[k].img);
-        
-        
-                }
-                else {
-                    card_img[count].setAttribute("src", "");
-                }
-                document.getElementsByClassName("category_card_head")[count].innerHTML=news[k].heading;
-                // document.write(news[k].heading);
+        for(let j=0;j<news.length;j++)
+        {   console.log("j "+j);
+            if(avl_cate[i]==news[j].category)
+            {    console.log("In J "+j);
+                // document.write("worikng");
+                const card_img =document.getElementsByClassName("category_card_img"+i);
+                document.getElementsByClassName("category_card_head"+i)[count].insertAdjacentText("afterbegin",news[j].heading);
+               card_img[count].setAttribute("src",news[j].img);
                 count++;
-            }
-            if (count >= card_img.length) {
-                break;
-            }
+                document.getElementsByClassName("category_card_title")[i].innerHTML=avl_cate[i];
 
+                if(count==card_img.length)
+                {    
+
+                    const card_sub_str = document.getElementsByClassName("category_card_sub_str"+i)[0];
+                      const new_card=  card_sub_str.cloneNode(true);
+                    
+                    document.getElementById("card_row"+i).appendChild(new_card);
+
+                    
+                }
+            }
         }
+        
 
+        const card_row=   document.getElementById("card_row"+i);
+        card_row.removeChild(card_row.lastElementChild);
 
     }
 }
@@ -196,13 +200,13 @@ const get_started = e_t => {
     {
 
         let old_scroll = document.getElementById('navbarSupportedContent').offsetTop + 40;
-        console.log(" top works " + old_scroll);
+        // console.log(" top works " + old_scroll);
 
         window.onscroll = function (e) {
-            console.log(" scroll works " + window.scrollY);
+            // console.log(" scroll works " + window.scrollY);
 
             if (old_scroll >= window.scrollY) {
-                console.log(" top works inside");
+                // console.log(" top works inside");
 
 
             }
