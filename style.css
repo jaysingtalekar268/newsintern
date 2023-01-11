@@ -1,5 +1,5 @@
 .div_box {
-       
+
         margin: 1%;
 }
 
@@ -30,10 +30,12 @@ p {
         font-size: 300%;
         border-style: hidden;
         border-radius: 5px;
-        background: rgb(200, 200, 200);
-        color: rgb(63, 60, 57);
-        margin-top:1%;
-        margin-bottom:3%;
+        /* background: rgb(200, 200, 200); */
+        background-color: rgb(102, 95, 95);
+        /* color: rgb(63, 60, 57); */
+        color: rgb(249, 249, 247);
+        margin-top: 1%;
+        margin-bottom: 3%;
 
 }
 
@@ -42,20 +44,25 @@ img:hover {
 
 }
 
-
+.news_slide_main {
+        border-style: groove;
+        background-color: rgb(249, 249, 249);
+         border-width: 5px;
+        padding: 2%;
+}
 
 .news_slide_head {
 
         font-family: HElvetica Neue;
         font-weight: bold;
-       
-       
+
+
 }
 
-.news_slide_img
-{
-        padding:2% 0%;
+.news_slide_img {
+        padding: 2% 0%;
 }
+
 .continue_news {
         border-style: hidden;
         background-color: white;
@@ -86,9 +93,9 @@ img:hover {
         font-size: 22px;
         animation-name: logo_animation;
         animation-duration: 3s;
+
 }
 
-#navbar_name:hover {}
 
 .navbar_main {
 
@@ -96,74 +103,130 @@ img:hover {
         top: 0;
         border-style: solid;
         border-color: rgb(241, 231, 238);
+
 }
 
-.homepage_main_news_body
-{
+.main_news {
+        border-style: groove;
+        padding: 1% 2%;
+        border-width: 1px;
+        border-radius: 3px;
+        background-color: rgb(249, 249, 249);
+        border-color: rgb(255, 255, 255);
+
+}
+
+.homepage_main_news_body {
         font-size: 16px;
         line-height: 30px;
 }
 
-.footer_body
-{
-        border-top-style:solid;
+.footer_body {
+        border-top-style: solid;
         border-top-width: 5px;
-        border-top-color:rgb(79, 27, 27);
+        border-top-color: rgb(79, 27, 27);
         padding: 5px;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-top: 40px;
+        padding-bottom: 60px;
         background-color: rgb(240, 247, 245);
-       
+
 }
 
-.next_news_read_btn
-{
-        
-   border-style: none;
-   padding:0;
-   margin-bottom: 10%;
-  
+#next_news {
+        background: rgb(200, 200, 200);
+        padding: 1%;
+        padding: 0% 2%;
+        padding-top: 5%;
+        margin-bottom: 1%;
+        border-radius: 5px;
 }
 
-.next_news_img
-{
-      margin-right:2%;
+#next_news_div {
+        background-color: rgb(180, 181, 184);
+
 }
 
-.next_news_li > a
-{
-      margin-bottom:10% ;
-      text-decoration: none;
-      color:black;
-}
-.next_news_li > a:hover
-{
-        color:green;
-}     
+.next_news_read_btn {
 
-.category_card_title
-{
-        
+        border-style: none;
+        padding: 0;
+        margin-bottom: 10%;
+
 }
-.category_card_sec
-{
-       
+
+
+
+.next_news_img {
+        margin-right: 2%;
+
+}
+
+.next_news_li>a {
+        margin-bottom: 10%;
+        text-decoration: none;
+        color: rgb(8, 21, 10);
+}
+
+.next_news_li>a:hover {
+        color: rgb(181, 214, 187);
+}
+
+
+.category_card_title {
+        display: block;
+        background: rgb(200, 200, 200);
+        padding: 1% 0%;
+        padding-left: 1%;
+        color: rgb(69, 41, 41);
+        font-size: 20px;
+        margin: 1% 0%;
+
+
+}
+
+.category_card_sec {
+        margin: 2% 0%;
+        ;
         /* display: flex; */
+        background-color: rgb(249, 249, 247);
+
 
 }
 
 
-.category_card_sub_str
-{
+.category_card_sub_str {
         margin: 1%;
         margin-left: 4%;
 }
 
-.category_card_img
-{
+.category_card_img {
         /* height:50%;
         width: 100%; */
         border-radius: 5px;
-        padding:1% 1%;
-        
+        padding: 1% 1%;
+
+}
+
+.category_card_head {
+        color: rgb(8, 21, 10);
+}
+
+.category_card_head:hover {
+        color: rgb(181, 214, 187);
+}
+
+.pop_cat {
+        background: rgb(200, 200, 200);
+        padding: 2%;
+        border-radius: 3px;
+        color: rgb(76, 77, 71);
+        margin-top: 5%;
+}
+
+.pop_span {
+        margin: 10px;
+        background-color: rgb(180, 181, 184);
+        padding: 1% 0%;
+        color: rgb(8, 21, 10);
+        border-radius: 5px;
 }
